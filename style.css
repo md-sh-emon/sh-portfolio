@@ -1,0 +1,390 @@
+:root {
+    --pirmary-color: #3598DB;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.3em;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro-section {
+    background-image: url('images/1.png');
+    background-size: cover;
+}
+
+.intro-section .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-sidebar {
+    flex: 30%;
+    background: var(--pirmary-color);
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.profile-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-section h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.profile-section p {
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.navigation-menu {
+    margin-top: 10px;
+}
+
+.navigation-menu ul {
+    list-style: none;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.navigation-menu ul li a:hover,
+.navigation-menu ul .active a {
+    background: #ffffff;
+    color: var(--pirmary-color);
+
+}
+
+.navigation-menu ul .active a:first-child {
+    border-top: 2px solid #ffffff;
+}
+
+.social-profiles {
+    margin: 40px 0;
+}
+
+
+.social-profiles ul{
+    list-style: none;
+}
+
+.social-profiles ul li {
+    display: inline;
+}
+
+.social-profiles ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    background: #00000038;
+    margin-right: 5px;
+}
+
+.social-profiles ul li a:hover {
+    background: #000000b7;
+}
+
+.footer-copyright hr {
+    border: 1px solid #ffffffa1;
+    margin-bottom: 20px;
+}
+.footer-copyright p {
+    font-size: 14px;
+}
+
+.about-section {
+    flex: 70%;
+    padding: 40px 20px;
+    color: #ffffffe3;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.divider {
+    width: 40px;
+    color: var(--pirmary-color);
+    margin: 10px auto;
+    border: 1.5px solid var(--pirmary-color);
+}
+
+.post-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-section img {
+    border-radius: 3px;
+}
+
+.post-thumbnail {
+    flex: 30%;
+}
+
+.post-body {
+    flex: 70%;
+    margin-left: 10px;
+}
+
+.post-body h2 {
+    margin-bottom: 5px;
+}
+
+.post-body p {
+    line-height: 1.3em;
+}
+
+.post-body button {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    color: var(--pirmary-color);
+    cursor: pointer;
+    font-weight: 700;
+    border: 0;
+    margin-top: 10px;
+}
+
+.post-body button:hover {
+    background-color: var(--pirmary-color);;
+    color: #ffffff;
+}
+
+/* Skill Section */
+.skill-section {
+    padding: 40px 0;
+    background: #dddddd;
+    color: #2c3e50;
+}
+
+.skill-section h2,
+.skill-section h3 {
+    color: #000000;
+}
+
+.skill-items h3 {
+    text-transform: capitalize;
+}
+
+.skill-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.skill-item {
+    flex: 32.33%;
+    margin-right: 10px;
+    background: rgba(0, 0, 0, 0.116);
+    margin-bottom: 10px;
+    padding: 15px;
+    text-align: center;
+}
+.circle {
+    height: 80px;
+    width: 80px;
+    border: 2px solid var(--pirmary-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.skill-item i {
+    color: var(--pirmary-color);
+    font-size: 32px;
+}
+
+.skill-item h3 {
+    margin: 15px 0;
+}
+
+.skill-item p {
+    line-height: 1.3em;
+}
+
+/* Portfolio Section */
+
+.portfolio-section {
+    padding: 40px 0;
+}
+
+.portfolio-text {
+    text-align: center;
+}
+
+.portfolio-menu {
+    margin-top: 20px;
+}
+
+.portfolio-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio-menu ul li {
+    display: inline;
+    color: #000000;
+    margin-right: 10px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.portfolio-menu ul li:hover,
+.portfolio-menu .active {
+    color: var(--pirmary-color);
+    border-bottom: 2px solid var(--pirmary-color);
+}
+
+/* Portfolio Container */
+.portfolio-gallery-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.gallery-image img {
+    width: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px;
+    background: #dddddd;
+    color: #2c3e50;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form input {
+    padding: 10px;
+    border: 2px solid var(--pirmary-color);
+    outline: 0;
+    margin-top: 10px;
+}
+
+.user-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-name input {
+    width: 49.5%;
+}
+
+.subject input {
+    width: 100%;
+}
+
+.message textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--pirmary-color);
+    margin-top: 10px;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit input {
+    color: var(--pirmary-color);
+    cursor: pointer;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.submit input:hover {
+    background: var(--pirmary-color);
+    color: #ffffff;
+}
+
+/* Media Query */
+
+@media all and (max-width: 1000px) {
+    .post-section {
+        flex-direction: column;
+    }
+    .thumbnail-left .post-body h2 {
+        margin-top: 20px;
+    }
+    .thumbnail-right .post-body {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .intro-section .container {
+        flex-direction: column;
+    }
+    .skill-items {
+        flex-direction: column;
+    }
+    .user-name {
+        flex-direction: column;
+    }
+    .user-name input{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 454px){
+    .portfolio-menu ul li {
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
